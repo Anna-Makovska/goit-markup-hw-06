@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="./css/styles.css" />
 </head>
   <body>
-    <header class="page-header">
+    <class="page-header">
      <div class="container header-container">
      <nav class="header-nav">
         <a class="logo header-logo" href="./index.html"
@@ -31,6 +31,63 @@
           <li class ="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="burger-button" type="button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mobile-menu"> 
+        <div class="container mobile-menu-container">
+          <button  class="mobile-button-type" type="submit">
+            <svg class="mobile-icon-type " width="8" height="8">
+              <use href="./images/icons.svg#icon-close"> </use>
+            </svg>
+          </button>
+          <ul class="mobile-nav">
+            <li class="mobile-nav-item">Studio</li>
+            <li class="mobile-nav-item">Portfolio</li>
+            <li class="mobile-nav-item">Contacts</li>
+          </ul>
+          <address class="mobile-contacts">
+        <ul class="mobile-contacts-list">
+          <li class ="mobile-contacts-item"><a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class ="mobile-contacts-item"><a class="mobile-contacts-link href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+      </address>
+      <ul class="mobile-icons-list ">
+                <li class="mobile-icons-team">
+                  <a href="https://www.instagram.com/" target="_blank" class="mobile-icons-link ">
+                    <svg class="mobile-icons-media" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram">
+
+                </use>
+              </svg>
+            </a>
+          </li>
+                <li class="mobile-icons-team">
+                  <a href="https://www.twitter.com/" target="_blank" class="mobile-icons-link ">
+                    <svg class="mobile-icons-media" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter">
+
+                </use></svg></a></li>
+                <li class="mobile-icons-team">
+                  <a href="https://facebook/" target="_blank" class="mobile-icons-link ">
+                    <svg class="mobile-icons-media" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook">
+
+                </use></svg></a></li>
+                <li class="mobile-icons-team">
+                  <a href="https://www.linkedin.com" target="_blank" class="mobile-icons-link">
+                    <svg class="mobile-icons-media" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin">
+
+                </use></svg></a></li>
+               </ul>
+              
+
+
+
       </div>
     </header>
     <main>
@@ -41,7 +98,7 @@
         </div>
       </section>
 
-      <section class="advantages-container">
+      <section class="advantages-container hidden">
      <div class="container">
          <h2 class="visually-hidden" >Advantages</h2>
          
@@ -102,7 +159,7 @@
          </ul>
      </div>
       </section>
-        <section class="team-container">
+        <section class="team-container hidden">
           <div class="container team-box"> 
           <h2 class="team-structure">Our Team</h2>
           <ul class="team-list">
@@ -266,7 +323,7 @@
       </div>
       </section>
       
-      <section class="portfolio-container">
+      <section class="portfolio-container hidden">
         <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-group">
@@ -386,7 +443,7 @@
       </section>
     </main>
     
-    <footer class="page-footer" >
+    <footer class="page-footer hidden" >
 
 <div class="container footer-container">
   <div class="footer-info">
@@ -446,7 +503,7 @@
 </div>
 </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-open" type="button">
         <svg class="icon-modal" width="8" height="8">
